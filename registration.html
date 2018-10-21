@@ -1,0 +1,32 @@
+<head>
+<link rel= "stylesheet" href="./registration.css">
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form id="login" class="login-form">
+      <input id="txtNameToRegister" type= "text" placeholder="name"/>
+      <input id="txtEmailToRegister" type="text" placeholder="email address"/>
+      <input id="txtPasswordToRegister" type="password" placeholder="password"/>
+    </form>
+    <button onclick="addUserAndPassword()">Create</button>
+    <p class="message">Have an Account? <a href="./login.html">Log in</a></p>
+  </div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBvvGh1KdO2li9Y95FZjJiP1Q7oyA7dz_I",
+    authDomain: "budgetapp-a7ac0.firebaseapp.com",
+    databaseURL: "https://budgetapp-a7ac0.firebaseio.com",
+    projectId: "budgetapp-a7ac0",
+    storageBucket: "budgetapp-a7ac0.appspot.com",
+    messagingSenderId: "752879639029"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./registration.js"></script>
+</body>

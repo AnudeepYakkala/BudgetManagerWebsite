@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input id="txtNameToRegister" type= "text" placeholder="name"/>
+      <input id="txtPasswordToRegister" type="password" placeholder="password"/>
+      <input id="txtEmailToRegister" type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input id="txtEmail" type="text" placeholder="username"/>
+      <input id="txtPassword" type="password" placeholder="password"/>
+      <p class="message">Not registered? <a href="./registration.html">Create an account</a></p>
+    </form>
+    <button onclick="CheckUserAndPassword()">login</button>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBvvGh1KdO2li9Y95FZjJiP1Q7oyA7dz_I",
+    authDomain: "budgetapp-a7ac0.firebaseapp.com",
+    databaseURL: "https://budgetapp-a7ac0.firebaseio.com",
+    projectId: "budgetapp-a7ac0",
+    storageBucket: "budgetapp-a7ac0.appspot.com",
+    messagingSenderId: "752879639029"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./login.js"></script>
+</body>
